@@ -16,7 +16,7 @@ In this application the shocks are generated preemptively using the ```numpy.ran
 
 
 
-
+# Python code
 ```python
 %matplotlib inline
 
