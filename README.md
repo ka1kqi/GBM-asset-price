@@ -8,7 +8,7 @@ This happens at every step in a general case but in the case of this simple simu
 
 2. Next, we can calculate delta log price:\
 $dlogS = \mu + \delta * Z_{i,k}$, where $Z_{i,k}$ is a gaussian shock along path $i$ and step $k$.
-In this application the shocks are generated preemptively using the ```numpy.random.randn()``` function with parameters $M$ paths and $N$ steps per path, resulting in a $M$ x $N$ array of shocks. In this case, $dlogS$ is a the $M$ x $N$ matrix of shocks created by scaling by $\delta$ and adding $\mu$ to every element.
+In this application the shocks are generated preemptively using the ```numpy.random.randn()``` function with parameters $M$ paths and $N$ steps per path, resulting in a $M$ x $N$ array of shocks. In this case, $dlogS$ is the $M$ x $N$ matrix of shocks created by scaling by $\delta$ and adding $\mu$ to every element.
 
 3. We can then use ```np.cumsum()``` to accumulate $dlogS$ which creates a rolling summation of log price. 
 
