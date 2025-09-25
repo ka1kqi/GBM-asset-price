@@ -27,7 +27,7 @@ import matplotlib.pyplot as plt
 
 def simulate_gbm_paths(
    S0 = 100, #initial price
-   T = 1.0, #maturity
+   T = 1.0, #time
    r = 0.05, #risk-free rate
    q = 0.0, #dividend yield
    sigma = 0.2, #annualized vol
